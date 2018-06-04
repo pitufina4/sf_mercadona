@@ -1,0 +1,86 @@
+
+
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+	<div id="imagen" class="fondoimagen">
+           <h1> Empieza tu compra <br> en Mercadona </h1>
+           
+           <p></p>
+           <form class="form-inline" action="{{ path('recibir_formulario') }}" method="post">
+               <div class="form-group-inline mx-sm-3 mb-2">
+                   <input type="Job title, keywords..." class="form-control" id="inputPassword2" placeholder="Código postal" name="cp">
+                   
+                   <label for="inputPassword2" class="sr-only">Código postal </label>
+               </div>
+               <button type="submit" class="btn btn-success mb-2"> ENTRAR <i class="fas fa-arrow-right"></i></button>
+           </form>
+   	</div>
+
+
+
+ 	
+        <div class="card-group" id="info" >
+            <div class="card" id="infouno">
+            <img class="card-img-top" src="https://png.pngtree.com/element_origin_min_pic/16/12/04/df04c13ee5d81c32f25845338bda282b.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="h4">Nueva web y servicio en Valencia centro</h4>
+                    <h3 class="small">Tu compra en casa de 7:00 a 22:00. Tramos de 1 hora. Calidad y frescura como en tu tienda.</h3>
+                </div>     
+            </div>
+
+            <div class="card" id="infodos">
+            <img class="card-img-top" src="https://img.blogs.es/anexom/wp-content/uploads/2018/02/crear-mapa-google-personalizado.jpg" class="float-left" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="h4">Próximamente en otras zonas</h4>
+                    <h3 class="small">Si quieres que te avisemos, déjanos tu email y tu código postal</h3>
+                    <a href="">Sí,avisadme</a>
+                </div>
+            </div>
+            
+           <div class="card" id="infotres">
+            <img class="card-img-top" src="https://png.pngtree.com/element_origin_min_pic/16/12/31/09466277710601cf2a8e8f983ff5ee83.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="h4">La versión clásica sigue existiendo</h4>
+                    <h3 class="small">Si al introducir tu código postal, aún no llegamos a tu zona, puedes seguir comprando en Mercadona a través de la web de siempre.</h3>
+                </div>  
+            </div>
+        </div>
+
+ 	
+	
+
+
+  	
+
+
+
+<div id="wrapper">
+   	<div class ="mapa container-fluid">
+		<div class ="row">
+			<div id="google_map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5223.46656583916!2d-6.968642971418545!3d38.880717227377716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1527836558298" width="1287" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>	
+	</div>
+	
+   	<div id="over_map">
+		<h4> Empieza a comprar en <br> Mercadona</h4>
+		<p>Introduce tu código postal o localiza en <br> el mapa dónde quieres recibir tu 
+      <br> próxima compra.</p>
+		<form class="form-inline">
+           <div class="form-group-inline mx-sm-3 mb-2">
+               <input type="Job title, keywords..." class="form-control" id="inputPassword2" placeholder="Código postal">
+               
+               <label for="inputPassword2" class="sr-only">Código postal </label>
+           </div>
+           <button type="submit" class="btn btn-success mb-2"> ENTRAR </button>
+        </form>
+   	</div>
+</div>
+
+
+{% endblock %}

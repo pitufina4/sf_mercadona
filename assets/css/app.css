@@ -1,0 +1,129 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+div.fondoimagen {
+	background-image: url(https://www.mercadona.es/img/header-medium.088535.jpg);
+	background-size: cover;
+	color: white;
+	text-align: right;
+	padding-bottom: 100px;
+
+}
+
+
+header>div.alert{
+
+	text-align: center;
+	text-decoration: underline;
+}
+
+header > nav .navbar-custom a {
+
+color: #00ab61;
+font-family: Muli;
+font-size: .9375rem;
+}
+
+
+header > nav > span {
+	margin-right: 40px;
+}
+
+div.fondoimagen>h1{
+
+	padding-top: 100px;
+	padding-right: 150px;
+}
+
+#imagen>h1{
+color: #fff;
+font-family: PT Serif;
+font-weight: 600;
+line-height: 1.15;
+max-width: 100%;
+font-size: 52px;
+flex: 100%;
+margin: 0 0 16px;
+
+}
+
+
+form {
+	padding-left:800px;
+	padding-bottom:100px;
+
+}
+
+.card-group {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    margin-right: 90px;
+    /*border-radius: 0.1px;*/
+
+
+}#info img {
+    width: 150px;
+   height: 150px;
+}
+
+#infodos a{
+
+	color: #00ab61;
+	margin-top: 16px;
+	font-size: 16px;
+}
+
+
+
+
+	
+#wrapper { position: relative; }
+#over_map { 
+	position: absolute; top: 10px; left: 10px; z-index: 99; 
+	background-color:white;
+	width: 350px;
+}
+
+#over_map button{
+
+	margin-left:200px;
+}
+
+
+footer {
+
+background-color: #1c3037;
+color: white;
+
+}
+	
+/*#over_map input{
+height: 32px;
+padding-top: 9px;
+width: 100%;
+border-radius: 4px;
+padding-left: 10px;
+outline: none;
+border: 1px solid hsla(0,0%,46%,.18);
+
+}
+
+
+#over_map button{
+
+margin-top: 24px;
+padding: 12px;
+font-size: 18px;
+font-weight: 700;
+width: 296px;
+border-radius: 4px;
+background-color: #0a5;
+color: #fff;
+cursor: pointer;
+border: none;
+overflow: visible;
+text-align:left;
+
+}
+*/
