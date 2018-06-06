@@ -15,7 +15,7 @@ class CategoriaType extends AbstractType
     {
         $builder
             ->add('nombre')
-            ->add('save', SubmitType::class, array('attr' => array('class' => 'btn btn-success'),
+            ->add('guardar', SubmitType::class, array('attr' => array('class' => 'btn btn-success'),
                                     
             ));
         ;

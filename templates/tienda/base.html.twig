@@ -1,5 +1,10 @@
 {% extends 'base.html.twig' %}
 
+ {% block stylesheets %}
+ 		{{ parent() }}
+      <link rel="stylesheet" href="{{ asset('build/tienda.css') }}">          
+ 	
+ {% endblock %}
 
 {% block header %}
 
@@ -7,21 +12,29 @@
 		<nav class="navbar navbar-expand-lg">
 			<a class="navbar-brand" href="#">
 		    <img src="https://www.mercadona.com/estaticos/images/mercadona_logo/es/mercadona-imagotipo-color-300.png"  height="30" class="d-inline-block align-top" alt="">		   
-		  </a>
+		  	</a>
 
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    <div class="navbar-nav navbar-custom">
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			    <div class="navbar-nav navbar-custom">
+			     	<form class="form-inline" action="{{ path('recibir_formulario') }}" method="post">
+		               	<div class="form-group-inline mx-sm-3 mb-2">
+		               		<i class="fas fa-search"></i>
+		                   <input type="Job title, keywords..." class="form-control" id="inputPassword2" placeholder="Buscar productos" name="cp">
+		                   
+		                   <label for="inputPassword2" class="sr-only">Buscar productos </label>
+		               	</div>   
+	           		</form>
 
-		      <a class="nav-item nav-link active " href="#">Conócenos <span class="sr-only">(current)</span></a>
-		      <a class="nav-item nav-link" href="#">Categorías</a>
-		      <a class="nav-item nav-link" href="#">Mis Habituales</a>
-		    </div>
-		    <span class="navbar-text">
-		      Identifícate
-		      <i class="fas fa-angle-down"></i>
-		      <i class="fas fa-shopping-cart"></i>
-		    </span>
-		  </div>
+				    <a class="nav-item nav-link" href="#">Categorías</a>
+				    <a class="nav-item nav-link" href="#">Mis Habituales</a>
+			    
+				    <span class="navbar-text">
+				      	Identifícate
+				      	<i class="fas fa-angle-down"></i>
+				      	<i class="fas fa-shopping-cart"></i>
+				    </span>
+				</div>  
+			</div>
 		</nav>
 
 

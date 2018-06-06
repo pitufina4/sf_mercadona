@@ -87,4 +87,7 @@ class ProductoController extends Controller
 
         return $this->redirectToRoute('producto_index');
     }
+
+
+    
 }

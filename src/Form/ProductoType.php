@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Producto;
 use App\Entity\Categoria;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -17,8 +18,13 @@ class ProductoType extends AbstractType
             ->add('nombre')
             ->add('descripcion')
             ->add('precio')
-            ->add('categoria')
-            ->add('save', SubmitType::class, array('attr' => array('class' => 'btn btn-success'),
+            ->add('categoria',EntityType::class,array(
+                'class' => Categoria::class,
+                'choice_label' => function ($categoria) {
+                    return $categoria->getNombre();            
+                }))
+
+            ->add('añadir al carro', SubmitType::class, array('attr' => array('class' => 'btn btn-success'),
                                     
             ));
         ;

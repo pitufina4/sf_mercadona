@@ -1,0 +1,53 @@
+
+
+header > nav > div:last-child{
+
+color: #878787;
+
+}
+
+
+.container > .row > .col:first-child{
+	background: rgba(0, 0, 0, 0) linear-gradient(125deg, rgb(84, 128, 128), rgb(108, 180, 180)) repeat scroll 0% 0%;
+
+
+}
+
+.container h1{
+
+	color: white;
+	font-family: PT Serif;
+	font-size: 2.00rem;
+	font-weight: 600;
+	line-height: 1.25;
+	text-align: left;
+	letter-spacing: .3px;
+	box-sizing: border-box;
+}
+
+.container button{
+
+	color: rgb(255, 255, 255);
+	box-sizing: border-box;
+	margin: 0;
+	cursor: pointer;
+	border: none;
+	font-family: Muli;
+	background-color: hsla(0,0%,100%,.3);
+	opacity: .9;
+	text-align: center;
+	font-weight: 400;
+	width: 146px;
+	height: 36px;
+	border-radius: 20px;
+	letter-spacing: .5px;
+	font-size: 1rem;
+
+}
+
+
+.card-group > .row > .col-1-5{
+
+	width: 20%;
+	
+}
